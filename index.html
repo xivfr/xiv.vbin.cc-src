@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta property="og:image" content="https://cdn.discordapp.com/attachments/869954405632454707/951913190890016819/a_0cec5f7c115b20bae9a603dbb9f9cce9.gif" />
+     <meta property="og:description" content="Xiv fr?" />
+     <meta name="description" content="Xiv fr?">
+     <meta name="keywords" content="xiv, pksvc, duh, rose, nuker, tools, whos xiv,">
+     <title>Xiv developer</title>
+     <link rel="stylesheet" href="css/master.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/edgy.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="js/jquery.vide.js"></script>
+</head>
+<!-- Autoplay background video -->
+<body data-vide-bg="vid">
+      <!-- 'zenx' text in middle of screen -->
+     <h1>xiv</h1>
+
+          <br>
+          <center><div id="clockDisplay" class="clockStyle"></div></center>
+          <!-- Clock script -->
+          <script>
+          function renderTime() {
+          var currentTime = new Date();
+          var diem = "am";
+          var h = currentTime.getHours();
+          var m = currentTime.getMinutes();
+          var s = currentTime.getSeconds();
+          setTimeout('renderTime()',1000);
+          if (h == 0) {
+               h = 12;
+          } else if (h > 12) { 
+               h = h - 12;
+               diem="pm";
+          }
+          if (h < 10) {
+               h = "0" + h;
+          }
+          if (m < 10) {
+               m = "0" + m;
+          }
+          if (s < 10) {
+               s = "0" + s;
+          }
+          var myClock = document.getElementById('clockDisplay');
+          myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+          myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+          }
+          renderTime();
+          </script><br>	
+          
+          
+
+<!-- Links to pages -->
+  <center>
+[ <a href="https://github.com/xivfr" >Github</a> &zwnj;]
+[ <a href="https://twitter.com/XivFr_" >Twitter</a> &zwnj;]<p></p>
+[ <a href="/Portfolio.html" >Portfolio</a> &zwnj;]
+  </center>
+    
+<!-- Autoplay music -->
+<embed id="bgAudio" type="audio/mpeg" src="music/vid.mp3" autoplay="true" volume="50" height="0" width="200" autostart="true"> </embed>
+
+
+</body>
+</html>
